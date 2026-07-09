@@ -1,13 +1,14 @@
 # 🏦 Console Banking System (C++)
 
+
+
+> A simple console-based banking system written in **C++** that demonstrates the fundamentals of programming, including arrays, loops, functions of a menu-driven application, user authentication, and basic banking operations.
+
+> This project was built as a practice exercise to strengthen core C++ programming concepts before moving on to more advanced topics such as file handling, object-oriented programming (OOP), and databases.
+
 ![Language](https://img.shields.io/badge/Language-C%2B%2B-blue.svg)
 ![Level](https://img.shields.io/badge/Level-Beginner-success)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-
-A simple console-based banking system written in **C++** that demonstrates the fundamentals of programming, including arrays, loops, functions of a menu-driven application, user authentication, and basic banking operations.
-
-This project was built as a practice exercise to strengthen core C++ programming concepts before moving on to more advanced topics such as file handling, object-oriented programming (OOP), and databases.
-
 ---
 
 ## ✨ Features
