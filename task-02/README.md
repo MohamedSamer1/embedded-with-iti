@@ -117,13 +117,7 @@ Run:
 
 ```bash
 ./BankingSystem
-```
 
-On Windows:
-
-```bash
-BankingSystem.exe
-```
 
 ---
 
