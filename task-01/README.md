@@ -126,11 +126,7 @@ g++ main.cpp -o calculator
 ./calculator
 ```
 
-**Windows**
 
-```bash
-calculator.exe
-```
 
 ---
 
