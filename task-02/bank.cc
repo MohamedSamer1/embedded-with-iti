@@ -3,8 +3,7 @@
 
 int main()
 {
-    //    std::string userName = "Mohamed";
-    //    std::string password = "password123";
+
 
     int choice1 = 0;
     int accountNum = 0;
