@@ -120,6 +120,12 @@ Run:
 ./BankingSystem
 ```
 
+On Windows:
+
+```bash
+BankingSystem.exe
+```
+
 ---
 
 ## 📷 Example
