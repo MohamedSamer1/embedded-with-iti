@@ -17,8 +17,9 @@ int main()
     std::vector<int> v5 = {1, 2}; // 2 elements value = {1,2}
 
     // 4 initialization
-    int arr[] = {1, 2, 3};
-    std::vector<int> v6(arr, arr + sizeof(arr) / sizeof(arr[0]));
-    std::vector<int> v10(std::begin(arr), std::end(arr));
+    int arr[] = {1, 2, 3}; // array of 3
+    std::vector<int> v6(arr, arr + sizeof(arr) / sizeof(arr[0])); // copy from array 
+    //OR
+    std::vector<int> v10(std::begin(arr), std::end(arr)); // copy from array
     return 0;
 }
