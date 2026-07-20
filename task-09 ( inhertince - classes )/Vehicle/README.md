@@ -94,7 +94,7 @@ This project demonstrates the use of:
                            Vehicle
        ┌────────────┬──────────────┬───────────────┬─────────────┐
        │            │              │               │             │
-      Car        Truck           Plane           Motor         Bicycle
+      Car         Truck          Plane           Motor         Bicycle
    ┌───┴───┐     ┌──┴──┐        ┌──┴──┐         ┌──┴──┐          │
   BMW     Audi  Volvo Isuzu  Boeing Airbus    Honda  Yamaha     BMX
 ```
