@@ -1,25 +1,110 @@
+# ==========================
 # VS Code
+# ==========================
 .vscode/
 
+# VS Code workspace files
+*.code-workspace
+
+# ==========================
 # Build folders
+# ==========================
 build/
 bin/
 Debug/
 Release/
+x64/
+x86/
+out/
+cmake-build-*/
+CMakeFiles/
 
+# ==========================
+# CMake
+# ==========================
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Makefile
+
+# ==========================
 # Object files
+# ==========================
 *.o
 *.obj
+*.lo
+*.slo
 
+# ==========================
+# Static & Dynamic Libraries
+# ==========================
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+
+# ==========================
 # Executables
+# ==========================
 *.exe
 *.out
+*.app
 
+# ==========================
+# Debug Symbols
+# ==========================
+*.pdb
+*.ilk
+*.idb
+
+# ==========================
+# Intermediate Files
+# ==========================
+*.pch
+*.ipdb
+*.iobj
+*.tlog
+*.lastbuildstate
+
+# ==========================
 # Logs
+# ==========================
 *.log
 
+# ==========================
+# Temporary Files
+# ==========================
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# ==========================
+# Visual Studio
+# ==========================
+.vs/
+*.VC.db
+*.VC.opendb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ==========================
+# Qt Creator
+# ==========================
+*.pro.user
+*.pro.user.*
+
+# ==========================
 # macOS
+# ==========================
 .DS_Store
 
+# ==========================
 # Windows
+# ==========================
 Thumbs.db
+Desktop.ini
