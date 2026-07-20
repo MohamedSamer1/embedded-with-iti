@@ -1,6 +1,25 @@
+# VS Code
 .vscode/
-*.exe
-*.obj
+
+# Build folders
+build/
+bin/
+Debug/
+Release/
+
+# Object files
 *.o
+*.obj
+
+# Executables
+*.exe
+*.out
+
+# Logs
 *.log
-*.tmp
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
