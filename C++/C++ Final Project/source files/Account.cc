@@ -3,7 +3,7 @@
 #include <stdexcept>
 #include "Account.h"
 
-Account::Account(std::string accountID, std::string accountName, double accountBalance) : accountID(accountID), accountName(accountName), accountBalance(accountBalance)
+Account::Account(std::string accountID, double accountBalance) : accountID(accountID), accountBalance(accountBalance)
 {
     if (accountBalance < 0)
     {
@@ -19,11 +19,6 @@ double Account::getAccountBalance()
 std::string Account::getAccountId()
 {
     return accountID;
-}
-
-std::string Account::getAccountName()
-{
-    return accountName;
 }
 
 void Account::deposit(double amount)

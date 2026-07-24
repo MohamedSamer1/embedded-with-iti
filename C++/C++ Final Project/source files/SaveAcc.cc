@@ -3,7 +3,7 @@
 #include <stdexcept>
 #include "SaveAcc.h"
 
-SavingAccount::SavingAccount(std::string accountID, std::string accountName, double accountBalance) : Account(accountID, accountName, accountBalance) {}
+SavingAccount::SavingAccount(std::string accountID, double accountBalance) : Account(accountID, accountBalance) {}
 
 void SavingAccount::withdraw(double amount)
 {
@@ -22,5 +22,5 @@ void SavingAccount::withdraw(double amount)
 
 std::string SavingAccount::getAccountType() const
 {
-    return "Saving\n";
+    return "Saving";
 }

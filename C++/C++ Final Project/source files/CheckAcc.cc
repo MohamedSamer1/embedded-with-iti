@@ -3,7 +3,7 @@
 #include <stdexcept>
 #include "CheckAcc.h"
 
-CheckingAccount::CheckingAccount(std::string accountID, std::string accountName, double accountBalance) : Account(accountID, accountName, accountBalance) {}
+CheckingAccount::CheckingAccount(std::string accountID, double accountBalance) : Account(accountID, accountBalance) {}
 
 void CheckingAccount::withdraw(double amount)
 {
@@ -22,5 +22,5 @@ void CheckingAccount::withdraw(double amount)
 
 std::string CheckingAccount::getAccountType() const
 {
-    return "Checking\n";
+    return "Checking";
 }

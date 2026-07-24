@@ -8,15 +8,12 @@ class Account
 {
 protected:
     std::string accountID;
-    std::string accountName;
     double accountBalance;
 
 public:
-    Account(std::string accountID, std::string accountName, double accountBalance);
+    Account(std::string accountID, double accountBalance);
 
     virtual std::string getAccountId();
-
-    virtual std::string getAccountName();
 
     virtual double getAccountBalance();
 

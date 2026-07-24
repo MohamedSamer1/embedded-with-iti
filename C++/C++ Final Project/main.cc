@@ -1,23 +1,38 @@
 #include <iostream>
-#include <string>
 #include <memory>
+
+#include "User.h"
 #include "SaveAcc.h"
 #include "CheckAcc.h"
 
 int main()
 {
-    std::unique_ptr<Account> acc1 =
-        std::make_unique<SavingAccount>("SAV-10001", "Mohamed", 5000);
+    User user("USR-1001", "Mohamed", "1234");
 
-    std::unique_ptr<Account> acc2 =
-        std::make_unique<CheckingAccount>("CHK-10001", "Ali", 3000);
+    user.addAccount(
+        std::make_unique<SavingAccount>(
+            "SAV-1001",
+            5000));
 
-    acc1->deposit(1000);
-    acc1->withdraw(500);
+    user.addAccount(
+        std::make_unique<CheckingAccount>(
+            "CHK-1001",
+            2500));
 
-    std::cout << acc1->getAccountName() << '\n';
-    std::cout << acc1->getAccountBalance() << '\n';
-    std::cout << acc1->getAccountType() << '\n';
+    user.displayAccounts();
 
+    std::cout << "\nSearching for SAV-1001...\n";
+
+    if (Account *account = user.findAccount("SAV-1001"))
+    {
+        account->deposit(1000);
+        account->withdraw(500);
+
+        std::cout << account->getAccountBalance() << '\n';
+    }
+    else
+    {
+        std::cout << "Account not found.\n";
+    }
     return 0;
 }

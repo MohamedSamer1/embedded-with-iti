@@ -8,7 +8,7 @@
 class SavingAccount : public Account
 {
 public:
-    SavingAccount(std::string accountID, std::string accountName, double accountBalance);
+    SavingAccount(std::string accountID, double accountBalance);
 
     virtual void withdraw(double amount) override;
 
