@@ -7,11 +7,12 @@
 
 class SavingAccount : public Account
 {
+public:
     SavingAccount(std::string accountID, std::string accountName, double accountBalance);
 
     virtual void withdraw(double amount) override;
 
-    virtual std::string getAccountType() override;
+    virtual std::string getAccountType() const override;
 };
 
 #endif

@@ -24,7 +24,7 @@ public:
 
     virtual void deposit(double amount);
 
-    virtual std::string getAccountType() = 0;
+    virtual std::string getAccountType() const = 0;
 
     virtual ~Account() = default;
 };
