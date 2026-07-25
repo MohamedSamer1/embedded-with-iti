@@ -53,3 +53,8 @@ std::string User::getUsername() const
 {
     return userName;
 }
+
+std::string User::getPassword() const
+{
+    return password;
+}

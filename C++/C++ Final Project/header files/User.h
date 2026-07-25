@@ -27,6 +27,8 @@ public:
     std::string getUserID() const;
 
     std::string getUsername() const;
+
+    std::string getPassword() const;
 };
 
 #endif

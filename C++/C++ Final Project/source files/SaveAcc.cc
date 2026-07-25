@@ -12,12 +12,15 @@ void SavingAccount::withdraw(double amount)
         throw std::invalid_argument("amount must be bigger than 0\n");
     }
 
-    if (amount > accountBalance)
+    else if (amount > accountBalance)
     {
         throw std::runtime_error("not enough money\n");
     }
+    else
+    {
 
-    accountBalance -= amount;
+        accountBalance -= amount;
+    }
 }
 
 std::string SavingAccount::getAccountType() const

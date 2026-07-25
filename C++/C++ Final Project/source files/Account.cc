@@ -27,6 +27,8 @@ void Account::deposit(double amount)
     {
         throw std::invalid_argument("need bigger than zero number\n");
     }
-
-    accountBalance += amount;
+    else
+    {
+        accountBalance += amount;
+    }
 }

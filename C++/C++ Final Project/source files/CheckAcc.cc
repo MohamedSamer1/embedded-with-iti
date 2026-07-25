@@ -12,7 +12,7 @@ void CheckingAccount::withdraw(double amount)
         throw std::invalid_argument("amount must be bigger than 0\n");
     }
 
-    if (amount > accountBalance + 150)
+    if (amount > accountBalance)
     {
         throw std::runtime_error("not enough money\n");
     }
