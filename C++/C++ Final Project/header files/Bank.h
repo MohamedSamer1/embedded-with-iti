@@ -5,12 +5,28 @@
 #include <vector>
 #include <string>
 #include "User.h"
+#include "SaveAcc.h"
+#include "CheckAcc.h"
 
 class Bank
 {
+private:
+    int userCounter = 1;
+    int savingAccountCounter = 1;
+    int checkingAccountCounter = 1;
     std::vector<std::unique_ptr<User>> users;
 
 public:
+    void createSavingAccount(User *user, double balance);
+
+    void createCheckingAccount(User *user, double balance);
+
+    std::string generateUserID();
+
+    std::string generateSavingAccountID();
+
+    std::string generateCheckingAccountID();
+
     void addUser(std::unique_ptr<User> user);
 
     User *findUser(const std::string &userID);
@@ -21,13 +37,13 @@ public:
 
     void displayUsers() const;
 
-    void registerUser(const std::string &userID, const std::string &username, const std::string &password);
+    void registerUser(const std::string &username, const std::string &password);
 
     User *login(const std::string &userID, const std::string &password);
 
-    void createSavingAccount(User *user, const std::string &accountID, double balance);
+    // void createSavingAccount(User *user, const std::string &accountID, double balance);
 
-    void createCheckingAccount(User *user, const std::string &accountID, double balance);
+    // void createCheckingAccount(User *user, const std::string &accountID, double balance);
 };
 
 #endif

@@ -37,15 +37,15 @@ void Menu(Bank &bank)
         {
         case 1:
         {
-            std::string id, username, password;
+            std::string username;
+            std::string password;
 
-            id = Validation::getString("User ID: ");
             username = Validation::getString("Username: ");
             password = Validation::getString("Password: ");
 
             try
             {
-                bank.registerUser(id, username, password);
+                bank.registerUser(username, password);
             }
             catch (const std::exception &e)
             {
@@ -93,20 +93,11 @@ void Menu(Bank &bank)
                 case 1:
                 {
 
-                    accountID = Validation::getString("Enter Account ID: ");
                     balance = Validation::getDouble("Enter starter balance: ");
 
                     try
                     {
-                        if (bank.findAccount(accountID) != nullptr)
-                        {
-                            throw std::runtime_error("Account ID already exists");
-                        }
-
-                        currentUser->addAccount(
-                            std::make_unique<SavingAccount>(accountID, balance));
-
-                        std::cout << "Saving account created \n";
+                        bank.createSavingAccount(currentUser, balance);
                     }
                     catch (const std::exception &e)
                     {
@@ -119,20 +110,11 @@ void Menu(Bank &bank)
                 case 2:
                 {
 
-                    accountID = Validation::getString("Enter Account ID: ");
                     balance = Validation::getDouble("Enter starter balance: ");
 
                     try
                     {
-                        if (bank.findAccount(accountID) != nullptr)
-                        {
-                            throw std::runtime_error("Account ID already exists");
-                        }
-
-                        currentUser->addAccount(
-                            std::make_unique<CheckingAccount>(accountID, balance));
-
-                        std::cout << "Saving account created\n";
+                        bank.createCheckingAccount(currentUser, balance);
                     }
                     catch (const std::exception &e)
                     {
@@ -144,7 +126,7 @@ void Menu(Bank &bank)
 
                 case 3:
                 {
-
+                    currentUser->displayAccounts();
                     accountID = Validation::getString("Enter Account ID: ");
                     amount = Validation::getDouble("Enter Deposit Amount: ");
 
@@ -172,8 +154,9 @@ void Menu(Bank &bank)
 
                 case 4:
                 {
-
+                    currentUser->displayAccounts();
                     accountID = Validation::getString("Enter Account ID: ");
+
                     amount = Validation::getDouble("Enter Withdraw Amount: ");
 
                     try
@@ -279,8 +262,6 @@ void Menu(Bank &bank)
 
 int main()
 {
-
-    int option;
 
     Bank bank;
 

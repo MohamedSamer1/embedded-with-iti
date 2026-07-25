@@ -1,6 +1,8 @@
 #include <iostream>
 #include <utility>
 #include <stdexcept>
+#include <iomanip>
+#include <sstream>
 #include "Bank.h"
 #include "Account.h"
 #include "SaveAcc.h"
@@ -91,23 +93,36 @@ void Bank::displayUsers() const
     }
 }
 
-void Bank::registerUser(const std::string &userID, const std::string &username, const std::string &password)
+void Bank::registerUser(const std::string &username, const std::string &password)
 {
-    if (findUser(userID) != nullptr)
     {
-        throw std::runtime_error("User ID already exists.");
+        std::string userID = generateUserID();
+        if (username.empty())
+        {
+            throw std::invalid_argument("Username cannot be empty.");
+        }
+        else if (password.length() < 4)
+        {
+            throw std::invalid_argument("Password must be at least 4 characters.");
+        }
+        else
+        {
+            users.push_back(
+                std::make_unique<User>(userID, username, password));
+
+            std::cout << "User registered successfully.\n";
+            std::cout << "User ID: " << userID << '\n';
+        }
     }
-
-    users.push_back(
-        std::make_unique<User>(userID, username, password));
-
-    std::cout << "User registered successfully.\n";
 }
 
 User *Bank::login(const std::string &userID, const std::string &password)
 {
     User *user = findUser(userID);
-
+    if (userID.empty() || password.empty())
+    {
+        return nullptr;
+    }
     if (user == nullptr)
     {
         return nullptr;
@@ -121,32 +136,61 @@ User *Bank::login(const std::string &userID, const std::string &password)
     return nullptr;
 }
 
-void Bank::createSavingAccount(User *user, const std::string &accountID, double balance)
+void Bank::createSavingAccount(User *user, double balance)
 {
-    if (user == nullptr)
+    std::string accountID = generateSavingAccountID();
+    if (balance < 0)
     {
-        throw std::runtime_error("Invalid user");
+        throw std::invalid_argument("Initial balance cannot be negative.");
     }
-
-    if (findAccount(accountID) != nullptr)
+    else
     {
-        throw std::runtime_error("Account ID already exists");
-    }
+        user->addAccount(std::make_unique<SavingAccount>(accountID, balance));
 
-    user->addAccount(std::make_unique<SavingAccount>(accountID, balance));
+        std::cout << "Saving account created\n";
+        std::cout << "Account ID: " << accountID << '\n';
+    }
 }
 
-void Bank::createCheckingAccount(User *user, const std::string &accountID, double balance)
+void Bank::createCheckingAccount(User *user, double balance)
 {
-    if (user == nullptr)
+    std::string accountID = generateCheckingAccountID();
+    if (balance < 0)
     {
-        throw std::runtime_error("Invalid user");
+        throw std::invalid_argument("Initial balance cannot be negative.");
     }
-
-    if (findAccount(accountID) != nullptr)
+    else
     {
-        throw std::runtime_error("Account ID already exists");
-    }
+        user->addAccount(std::make_unique<CheckingAccount>(accountID, balance));
 
-    user->addAccount(std::make_unique<CheckingAccount>(accountID, balance));
+        std::cout << "Checking account created\n";
+        std::cout << "Account ID: " << accountID << '\n';
+    }
+}
+
+std::string Bank::generateSavingAccountID()
+{
+    std::ostringstream stream;
+
+    stream << "SAV" << std::setw(4) << std::setfill('0') << savingAccountCounter++;
+
+    return stream.str();
+}
+
+std::string Bank::generateCheckingAccountID()
+{
+    std::ostringstream stream;
+
+    stream << "CHK" << std::setw(4) << std::setfill('0') << checkingAccountCounter++;
+
+    return stream.str();
+}
+
+std::string Bank::generateUserID()
+{
+    std::ostringstream stream;
+
+    stream << "USR" << std::setw(4) << std::setfill('0') << userCounter++;
+
+    return stream.str();
 }
