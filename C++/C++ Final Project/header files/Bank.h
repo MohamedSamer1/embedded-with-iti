@@ -41,9 +41,7 @@ public:
 
     User *login(const std::string &userID, const std::string &password);
 
-    // void createSavingAccount(User *user, const std::string &accountID, double balance);
 
-    // void createCheckingAccount(User *user, const std::string &accountID, double balance);
 };
 
 #endif

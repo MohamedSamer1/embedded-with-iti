@@ -8,10 +8,6 @@
 #include "SaveAcc.h"
 #include "CheckAcc.h"
 #include "SaveManger.h"
-// void Bank::addUser(std::unique_ptr<User> user)
-// {
-//     users.push_back(std::move(user));
-// }
 
 User *Bank::findUser(const std::string &userID)
 {
@@ -114,7 +110,7 @@ void Bank::registerUser(const std::string &username, const std::string &password
 
             std::cout << "User registered successfully.\n";
             std::cout << "User ID: " << userID << '\n';
-            SaveManger::log("User Registered: " + username);
+            SaveManger::log("User Registered: " + username + " " + userID);
         }
     }
 }

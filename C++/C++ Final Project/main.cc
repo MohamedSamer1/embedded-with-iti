@@ -129,7 +129,6 @@ void Menu(Bank &bank)
                 {
                     currentUser->displayAccounts();
                     accountID = Validation::getString("Enter Account ID: ");
-                    amount = Validation::getDouble("Enter Deposit Amount: ");
 
                     try
                     {
@@ -139,7 +138,7 @@ void Menu(Bank &bank)
                         {
                             throw std::runtime_error("Account not found or does not belong to you");
                         }
-
+                        amount = Validation::getDouble("Enter Deposit Amount: ");
                         account->deposit(amount);
 
                         std::cout << "Deposit done\n";
@@ -158,8 +157,6 @@ void Menu(Bank &bank)
                     currentUser->displayAccounts();
                     accountID = Validation::getString("Enter Account ID: ");
 
-                    amount = Validation::getDouble("Enter Withdraw Amount: ");
-
                     try
                     {
                         Account *account = currentUser->findAccount(accountID);
@@ -168,6 +165,7 @@ void Menu(Bank &bank)
                         {
                             throw std::runtime_error("Account not found or does not belong to you");
                         }
+                        amount = Validation::getDouble("Enter Withdraw Amount: ");
 
                         account->withdraw(amount);
 
