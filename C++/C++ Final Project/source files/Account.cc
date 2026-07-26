@@ -2,6 +2,7 @@
 #include <string>
 #include <stdexcept>
 #include "Account.h"
+#include "SaveManger.h"
 
 Account::Account(std::string accountID, double accountBalance) : accountID(accountID), accountBalance(accountBalance)
 {
@@ -30,5 +31,7 @@ void Account::deposit(double amount)
     else
     {
         accountBalance += amount;
+        SaveManger::saveTransaction("Deposit | " + accountID + " | +" + std::to_string(amount));
+        SaveManger::log("Deposit : " + accountID);
     }
 }

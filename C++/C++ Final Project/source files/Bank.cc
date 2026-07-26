@@ -7,11 +7,11 @@
 #include "Account.h"
 #include "SaveAcc.h"
 #include "CheckAcc.h"
-
-void Bank::addUser(std::unique_ptr<User> user)
-{
-    users.push_back(std::move(user));
-}
+#include "SaveManger.h"
+// void Bank::addUser(std::unique_ptr<User> user)
+// {
+//     users.push_back(std::move(user));
+// }
 
 User *Bank::findUser(const std::string &userID)
 {
@@ -41,9 +41,7 @@ Account *Bank::findAccount(const std::string &accountID)
     return nullptr;
 }
 
-void Bank::transfer(const std::string &fromAccountID,
-                    const std::string &toAccountID,
-                    double amount)
+void Bank::transfer(const std::string &fromAccountID, const std::string &toAccountID, double amount)
 {
 
     if (fromAccountID == toAccountID)
@@ -64,15 +62,20 @@ void Bank::transfer(const std::string &fromAccountID,
         throw std::runtime_error("Sender account not found.");
     }
 
-    if (receiver == nullptr)
+    else if (receiver == nullptr)
     {
         throw std::runtime_error("Receiver account not found.");
     }
+    else
+    {
 
-    sender->withdraw(amount);
-    receiver->deposit(amount);
+        sender->withdraw(amount);
+        receiver->deposit(amount);
 
-    std::cout << "Transfer completed successfully.\n";
+        std::cout << "Transfer completed successfully.\n";
+        SaveManger::saveTransaction("Transfer | " + fromAccountID + " -> " + toAccountID + " | " + std::to_string(amount));
+        SaveManger::log("Transfer : " + fromAccountID + " -> " + toAccountID);
+    }
 }
 
 void Bank::displayUsers() const
@@ -107,11 +110,11 @@ void Bank::registerUser(const std::string &username, const std::string &password
         }
         else
         {
-            users.push_back(
-                std::make_unique<User>(userID, username, password));
+            users.push_back(std::make_unique<User>(userID, username, password));
 
             std::cout << "User registered successfully.\n";
             std::cout << "User ID: " << userID << '\n';
+            SaveManger::log("User Registered: " + username);
         }
     }
 }
@@ -131,6 +134,7 @@ User *Bank::login(const std::string &userID, const std::string &password)
     if (user->getPassword() == password)
     {
         return user;
+        SaveManger::log("User Logged In: " + user->getUsername());
     }
 
     return nullptr;
@@ -149,6 +153,7 @@ void Bank::createSavingAccount(User *user, double balance)
 
         std::cout << "Saving account created\n";
         std::cout << "Account ID: " << accountID << '\n';
+        SaveManger::log("Saving Account Created: " + accountID);
     }
 }
 
@@ -165,6 +170,7 @@ void Bank::createCheckingAccount(User *user, double balance)
 
         std::cout << "Checking account created\n";
         std::cout << "Account ID: " << accountID << '\n';
+        SaveManger::log("Checking Account Created: " + accountID);
     }
 }
 

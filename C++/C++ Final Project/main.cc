@@ -7,6 +7,7 @@
 #include "SaveAcc.h"
 #include "CheckAcc.h"
 #include "Validation.h"
+#include "SaveManger.h"
 
 void Menu(Bank &bank)
 {
@@ -229,6 +230,7 @@ void Menu(Bank &bank)
                 case 7:
                     loggedIn = false;
                     std::cout << "Logged out\n";
+                    SaveManger::log("User Logged Out: " + currentUser->getUsername());
                     break;
 
                 default:
@@ -265,7 +267,11 @@ int main()
 
     Bank bank;
 
+    SaveManger::initialize();
+    SaveManger::log("Program Started");
+
     Menu(bank);
 
+    SaveManger::log("Program Closed");
     return 0;
 }

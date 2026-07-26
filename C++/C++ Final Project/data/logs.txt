@@ -1,0 +1,11 @@
+[2026-07-26 05:15:15] Program Started
+[2026-07-26 05:15:25] User Registered: hammo
+[2026-07-26 05:15:45] Saving Account Created: SAV0001
+[2026-07-26 05:15:48] Checking Account Created: CHK0001
+[2026-07-26 05:16:04] Deposit : SAV0001
+[2026-07-26 05:16:18] Withdraw : CHK0001
+[2026-07-26 05:16:46] Withdraw : CHK0001
+[2026-07-26 05:16:46] Deposit : SAV0001
+[2026-07-26 05:16:46] Transfer : CHK0001 -> SAV0001
+[2026-07-26 05:16:59] User Logged Out: hammo
+[2026-07-26 05:17:11] Program Closed
