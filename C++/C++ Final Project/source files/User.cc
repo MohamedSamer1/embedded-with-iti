@@ -5,13 +5,35 @@
 #include "User.h"
 #include "json.hpp"
 
-User::User(const std::string &userID, const std::string &username, const std::string &password) : userID(userID), userName(username), password(password) {}
+User::User(const std::string &userID, const std::string &username, const std::string &password, bool isAdmin) : userID(userID), userName(username), password(password), isAdmin(isAdmin) {}
 
 const std::vector<std::unique_ptr<Account>> &User::getAccounts() const
 {
     return accounts;
 }
 
+void User::setUsername(const std::string &username)
+{
+    userName = username;
+}
+
+void User::setPassword(const std::string &password)
+{
+    this->password = password;
+}
+bool User::deleteAccount(const std::string &accountID)
+{
+    for (auto it = accounts.begin(); it != accounts.end(); ++it)
+    {
+        if ((*it)->getAccountId() == accountID)
+        {
+            accounts.erase(it);
+            return true;
+        }
+    }
+
+    return false;
+}
 void User::addAccount(std::unique_ptr<Account> account)
 {
     accounts.push_back(std::move(account));
@@ -34,7 +56,7 @@ void User::displayAccounts() const
 {
     if (accounts.empty())
     {
-        std::cout << "No accounts found.\n";
+        std::cout << "No accounts found\n";
         return;
     }
 
@@ -63,4 +85,9 @@ std::string User::getUsername() const
 std::string User::getPassword() const
 {
     return password;
+}
+
+bool User::getIsAdmin() const
+{
+    return isAdmin;
 }

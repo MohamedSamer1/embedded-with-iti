@@ -1,38 +1,45 @@
 {
     "users": [
         {
-            "accounts": [
-                {
-                    "balance": 1611.0,
-                    "id": "SAV0001",
-                    "type": "Saving"
-                },
-                {
-                    "balance": 1200.0,
-                    "id": "CHK0001",
-                    "type": "Checking"
-                }
-            ],
+            "accounts": [],
             "id": "USR0001",
-            "password": "1920",
-            "username": "mohamed"
+            "isAdmin": true,
+            "password": "1120",
+            "username": "mohamed-samer"
+        },
+        {
+            "accounts": [],
+            "id": "USR0002",
+            "isAdmin": false,
+            "password": "1120",
+            "username": "jason"
         },
         {
             "accounts": [
                 {
-                    "balance": 501.0,
-                    "id": "SAV0002",
+                    "balance": 11.0,
+                    "id": "SAV0003",
                     "type": "Saving"
-                },
-                {
-                    "balance": 1.0,
-                    "id": "CHK0002",
-                    "type": "Checking"
                 }
             ],
-            "id": "USR0002",
-            "password": "251086",
-            "username": "jason"
+            "id": "USR0003",
+            "isAdmin": false,
+            "password": "1234",
+            "username": "Anas"
+        },
+        {
+            "accounts": [],
+            "id": "USR0004",
+            "isAdmin": false,
+            "password": "1234",
+            "username": "Ahmed"
+        },
+        {
+            "accounts": [],
+            "id": "USR0005",
+            "isAdmin": false,
+            "password": "1120",
+            "username": "Omar"
         }
     ]
 }

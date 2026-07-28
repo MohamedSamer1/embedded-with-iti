@@ -14,11 +14,12 @@ private:
     std::string userName;
     std::string password;
     std::vector<std::unique_ptr<Account>> accounts;
+    bool isAdmin;
 
 public:
     const std::vector<std::unique_ptr<Account>> &getAccounts() const;
 
-    User(const std::string &userID, const std::string &username, const std::string &password);
+    User(const std::string &userID, const std::string &username, const std::string &password, bool isAdmin = false);
 
     void addAccount(std::unique_ptr<Account> account);
 
@@ -31,6 +32,14 @@ public:
     std::string getUsername() const;
 
     std::string getPassword() const;
+
+    bool getIsAdmin() const;
+
+    void setUsername(const std::string &username);
+
+    void setPassword(const std::string &password);
+
+    bool deleteAccount(const std::string &accountID);
 };
 
 #endif

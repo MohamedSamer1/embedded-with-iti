@@ -9,7 +9,21 @@ Account::Account(std::string accountID, double accountBalance) : accountID(accou
     if (accountBalance < 0)
     {
         throw std::invalid_argument("cant intilize with negative bal\n");
+        SaveManger::log("Invaild account intialzation | " + accountID + " | +" + std::to_string(accountBalance) + " | Reason: amount cAant be negative");
     }
+    else
+    {
+        SaveManger::log("intilized : " + accountID);
+    }
+}
+void Account::setAccountBalance(double balance)
+{
+    if (balance < 0)
+    {
+        throw std::invalid_argument("Balance cannot be negative.");
+    }
+
+    accountBalance = balance;
 }
 
 double Account::getAccountBalance()
@@ -27,6 +41,7 @@ void Account::deposit(double amount)
     if (amount <= 0)
     {
         throw std::invalid_argument("need bigger than zero number\n");
+        SaveManger::log("Invaild deposit | " + accountID + " | +" + std::to_string(amount) + " | Reason: amount cAant be negative");
     }
     else
     {

@@ -17,7 +17,13 @@ private:
     std::vector<std::unique_ptr<User>> users;
 
 public:
+    void changeUsername(const std::string &userID, const std::string &newUsername);
+
+    void displayAllAccounts() const;
+
     const std::vector<std::unique_ptr<User>> &getUsers() const;
+
+    void changePassword(const std::string &userID, const std::string &newPassword);
 
     void setUserCounter(int counter);
 
@@ -48,6 +54,12 @@ public:
     void registerUser(const std::string &username, const std::string &password);
 
     User *login(const std::string &userID, const std::string &password);
+
+    void deleteUser(const std::string &userID);
+
+    void deleteAccount(const std::string &accountID);
+
+    void changeAccountBalance(const std::string &accountID, double newBalance);
 };
 
 #endif

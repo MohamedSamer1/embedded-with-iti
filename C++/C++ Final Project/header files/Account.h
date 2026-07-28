@@ -23,6 +23,8 @@ public:
 
     virtual std::string getAccountType() const = 0;
 
+    void setAccountBalance(double balance);
+
     virtual ~Account() = default;
 };
 

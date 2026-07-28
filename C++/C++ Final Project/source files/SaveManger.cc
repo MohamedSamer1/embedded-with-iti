@@ -42,6 +42,7 @@ void SaveManger::loadUsers(Bank &bank)
         std::string id = userJson["id"];
         std::string username = userJson["username"];
         std::string password = userJson["password"];
+        bool isAdmin = userJson.value("isAdmin", false);
 
         int userNumber = std::stoi(id.substr(3));
 
@@ -50,7 +51,7 @@ void SaveManger::loadUsers(Bank &bank)
             maxUser = userNumber;
         }
 
-        auto user = std::make_unique<User>(id, username, password);
+        auto user = std::make_unique<User>(id, username, password, isAdmin);
 
         for (const auto &accountJson : userJson["accounts"])
         {
@@ -101,7 +102,7 @@ void SaveManger::saveUsers(const Bank &bank)
         userJson["id"] = user->getUserID();
         userJson["username"] = user->getUsername();
         userJson["password"] = user->getPassword();
-
+        userJson["isAdmin"] = user->getIsAdmin();
         userJson["accounts"] = nlohmann::json::array();
 
         for (const auto &account : user->getAccounts())

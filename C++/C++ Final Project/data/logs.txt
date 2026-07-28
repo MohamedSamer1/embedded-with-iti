@@ -1,56 +1,29 @@
-[2026-07-26 05:15:15] Program Started
-[2026-07-26 05:15:25] User Registered: hammo
-[2026-07-26 05:15:45] Saving Account Created: SAV0001
-[2026-07-26 05:15:48] Checking Account Created: CHK0001
-[2026-07-26 05:16:04] Deposit : SAV0001
-[2026-07-26 05:16:18] Withdraw : CHK0001
-[2026-07-26 05:16:46] Withdraw : CHK0001
-[2026-07-26 05:16:46] Deposit : SAV0001
-[2026-07-26 05:16:46] Transfer : CHK0001 -> SAV0001
-[2026-07-26 05:16:59] User Logged Out: hammo
-[2026-07-26 05:17:11] Program Closed
-[2026-07-26 05:21:26] Program Started
-[2026-07-26 05:21:42] User Registered: mmohamedUSR0001
-[2026-07-26 05:22:07] User Logged Out: mmohamed
-[2026-07-26 05:22:09] Program Closed
-[2026-07-26 05:23:35] Program Started
-[2026-07-26 05:23:45] User Registered: USR0001 USR0001
-[2026-07-26 05:24:23] User Logged Out: USR0001
-[2026-07-26 05:24:24] Program Closed
-[2026-07-26 05:25:40] Program Started
-[2026-07-26 05:25:56] User Registered: hammo USR0002
-[2026-07-26 05:27:25] User Logged Out: hammo
-[2026-07-26 05:27:27] Program Closed
-[2026-07-26 05:53:14] Program Started
-[2026-07-26 05:53:29] User Registered: hammo USR0001
-[2026-07-26 05:54:12] User Registered: USR0001 USR0002
-[2026-07-26 05:54:36] Saving Account Created: SAV0001
-[2026-07-26 05:54:40] Checking Account Created: CHK0001
-[2026-07-26 05:54:44] User Logged Out: hammo
-[2026-07-26 05:54:45] Program Closed
-[2026-07-26 06:00:50] Program Started
-[2026-07-26 06:01:10] User Registered: mohamed USR0001
-[2026-07-26 06:01:42] Saving Account Created: SAV0001
-[2026-07-26 06:01:53] Checking Account Created: CHK0001
-[2026-07-26 06:01:57] User Logged Out: mohamed
-[2026-07-26 06:02:06] User Registered: jason USR0002
-[2026-07-26 06:10:15] Program Started
-[2026-07-26 06:10:25] User Registered: hammmmmo USR0001
-[2026-07-26 06:10:32] Program Closed
-[2026-07-26 06:24:38] Program Started
-[2026-07-26 06:24:48] User Registered: mohamed USR0001
-[2026-07-26 06:24:57] User Registered: jason USR0002
-[2026-07-26 06:25:40] Saving Account Created: SAV0001
-[2026-07-26 06:25:43] Checking Account Created: CHK0001
-[2026-07-26 06:25:54] User Logged Out: mohamed
-[2026-07-26 06:26:18] Saving Account Created: SAV0002
-[2026-07-26 06:26:19] Checking Account Created: CHK0002
-[2026-07-26 06:26:32] Deposit : SAV0002
-[2026-07-26 06:26:50] Withdraw : SAV0002
-[2026-07-26 06:26:50] Deposit : SAV0001
-[2026-07-26 06:26:50] Transfer : SAV0002 -> SAV0001
-[2026-07-26 06:26:57] User Logged Out: jason
-[2026-07-26 06:26:59] Program Closed
-[2026-07-26 06:27:02] Program Started
-[2026-07-26 06:27:35] User Logged Out: mohamed
-[2026-07-26 06:27:37] Program Closed
+[2026-07-28 10:37:01] Program Started
+[2026-07-28 10:37:07] User Registered: Mohamed USR0001
+[2026-07-28 10:37:14] User Registered: Jason USR0002
+[2026-07-28 10:37:20] User Registered: Anas USR0003
+[2026-07-28 10:37:45] Program Started
+[2026-07-28 10:38:56] Program Started
+[2026-07-28 11:34:08] Program Started
+[2026-07-28 11:34:27] User Registered: Ahmed USR0004
+[2026-07-28 11:34:34] User Logged In: Mohamed
+[2026-07-28 11:34:59] User Registered: mariem USR0005
+[2026-07-28 11:35:31] intilized : SAV0001
+[2026-07-28 11:35:31] Saving Account Created: SAV0001
+[2026-07-28 11:36:01] Account Deleted: SAV0001
+[2026-07-28 11:36:15] User Deleted: mariem USR0005
+[2026-07-28 11:36:43] Username Changed | USR0001 | Mohamed -> mohamed-samer
+[2026-07-28 11:37:03] Password Changed: USR0001
+[2026-07-28 11:38:43] intilized : SAV0002
+[2026-07-28 11:38:43] Saving Account Created: SAV0002
+[2026-07-28 11:39:10] Admin Logged Out: mohamed-samer
+[2026-07-28 11:39:12] Program Closed
+[2026-07-28 12:04:16] intilized : SAV0002
+[2026-07-28 12:04:16] Program Started
+[2026-07-28 12:04:27] User Logged In: mohamed-samer
+[2026-07-28 12:05:28] User Deleted: Jason USR0002
+[2026-07-28 12:05:39] User Registered: Omar USR0005
+[2026-07-28 12:08:59] Admin Logged Out: mohamed-samer
+[2026-07-28 12:09:30] User Logged In: Anas
+[2026-07-28 12:09:44] intilized : SAV0003
+[2026-07-28 12:09:44] Saving Account Created: SAV0003
