@@ -1,0 +1,38 @@
+{
+    "users": [
+        {
+            "accounts": [
+                {
+                    "balance": 1611.0,
+                    "id": "SAV0001",
+                    "type": "Saving"
+                },
+                {
+                    "balance": 1200.0,
+                    "id": "CHK0001",
+                    "type": "Checking"
+                }
+            ],
+            "id": "USR0001",
+            "password": "1920",
+            "username": "mohamed"
+        },
+        {
+            "accounts": [
+                {
+                    "balance": 501.0,
+                    "id": "SAV0002",
+                    "type": "Saving"
+                },
+                {
+                    "balance": 1.0,
+                    "id": "CHK0002",
+                    "type": "Checking"
+                }
+            ],
+            "id": "USR0002",
+            "password": "251086",
+            "username": "jason"
+        }
+    ]
+}

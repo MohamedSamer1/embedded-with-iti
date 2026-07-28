@@ -16,6 +16,8 @@ private:
     std::vector<std::unique_ptr<Account>> accounts;
 
 public:
+    const std::vector<std::unique_ptr<Account>> &getAccounts() const;
+
     User(const std::string &userID, const std::string &username, const std::string &password);
 
     void addAccount(std::unique_ptr<Account> account);

@@ -47,6 +47,7 @@ void Menu(Bank &bank)
             try
             {
                 bank.registerUser(username, password);
+                SaveManger::saveUsers(bank);
             }
             catch (const std::exception &e)
             {
@@ -99,6 +100,7 @@ void Menu(Bank &bank)
                     try
                     {
                         bank.createSavingAccount(currentUser, balance);
+                        SaveManger::saveUsers(bank);
                     }
                     catch (const std::exception &e)
                     {
@@ -116,6 +118,7 @@ void Menu(Bank &bank)
                     try
                     {
                         bank.createCheckingAccount(currentUser, balance);
+                        SaveManger::saveUsers(bank);
                     }
                     catch (const std::exception &e)
                     {
@@ -140,6 +143,7 @@ void Menu(Bank &bank)
                         }
                         amount = Validation::getDouble("Enter Deposit Amount: ");
                         account->deposit(amount);
+                        SaveManger::saveUsers(bank);
 
                         std::cout << "Deposit done\n";
                         std::cout << "Current Balance: " << account->getAccountBalance() << '\n';
@@ -168,11 +172,9 @@ void Menu(Bank &bank)
                         amount = Validation::getDouble("Enter Withdraw Amount: ");
 
                         account->withdraw(amount);
-
+                        SaveManger::saveUsers(bank);
                         std::cout << "Withdrawal done\n";
-                        std::cout << "Current Balance: "
-                                  << account->getAccountBalance()
-                                  << '\n';
+                        std::cout << "Current Balance: " << account->getAccountBalance() << '\n';
                     }
                     catch (const std::exception &e)
                     {
@@ -206,7 +208,7 @@ void Menu(Bank &bank)
                         }
 
                         bank.transfer(senderID, receiverID, amount);
-
+                        SaveManger::saveUsers(bank);
                         std::cout << "Transfer completed\n";
 
                         std::cout << "\nSender Balance   : " << sender->getAccountBalance() << '\n';
@@ -266,6 +268,7 @@ int main()
     Bank bank;
 
     SaveManger::initialize();
+    SaveManger::loadUsers(bank);
     SaveManger::log("Program Started");
 
     Menu(bank);

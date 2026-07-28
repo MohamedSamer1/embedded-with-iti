@@ -9,6 +9,31 @@
 #include "CheckAcc.h"
 #include "SaveManger.h"
 
+const std::vector<std::unique_ptr<User>> &Bank::getUsers() const
+{
+    return users;
+}
+
+void Bank::setUserCounter(int counter)
+{
+    userCounter = counter;
+}
+
+void Bank::setSavingAccountCounter(int counter)
+{
+    savingAccountCounter = counter;
+}
+
+void Bank::setCheckingAccountCounter(int counter)
+{
+    checkingAccountCounter = counter;
+}
+
+void Bank::addUser(std::unique_ptr<User> user)
+{
+    users.push_back(std::move(user));
+}
+
 User *Bank::findUser(const std::string &userID)
 {
     for (auto &user : users)
@@ -95,7 +120,6 @@ void Bank::displayUsers() const
 void Bank::registerUser(const std::string &username, const std::string &password)
 {
     {
-        std::string userID = generateUserID();
         if (username.empty())
         {
             throw std::invalid_argument("Username cannot be empty.");
@@ -106,6 +130,7 @@ void Bank::registerUser(const std::string &username, const std::string &password
         }
         else
         {
+            std::string userID = generateUserID();
             users.push_back(std::make_unique<User>(userID, username, password));
 
             std::cout << "User registered successfully.\n";
@@ -138,13 +163,14 @@ User *Bank::login(const std::string &userID, const std::string &password)
 
 void Bank::createSavingAccount(User *user, double balance)
 {
-    std::string accountID = generateSavingAccountID();
     if (balance < 0)
     {
         throw std::invalid_argument("Initial balance cannot be negative.");
     }
     else
     {
+        std::string accountID = generateSavingAccountID();
+
         user->addAccount(std::make_unique<SavingAccount>(accountID, balance));
 
         std::cout << "Saving account created\n";
@@ -155,13 +181,14 @@ void Bank::createSavingAccount(User *user, double balance)
 
 void Bank::createCheckingAccount(User *user, double balance)
 {
-    std::string accountID = generateCheckingAccountID();
     if (balance < 0)
     {
         throw std::invalid_argument("Initial balance cannot be negative.");
     }
     else
     {
+        std::string accountID = generateCheckingAccountID();
+
         user->addAccount(std::make_unique<CheckingAccount>(accountID, balance));
 
         std::cout << "Checking account created\n";

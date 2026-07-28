@@ -17,6 +17,14 @@ private:
     std::vector<std::unique_ptr<User>> users;
 
 public:
+    const std::vector<std::unique_ptr<User>> &getUsers() const;
+
+    void setUserCounter(int counter);
+
+    void setSavingAccountCounter(int counter);
+
+    void setCheckingAccountCounter(int counter);
+
     void createSavingAccount(User *user, double balance);
 
     void createCheckingAccount(User *user, double balance);
@@ -40,8 +48,6 @@ public:
     void registerUser(const std::string &username, const std::string &password);
 
     User *login(const std::string &userID, const std::string &password);
-
-
 };
 
 #endif

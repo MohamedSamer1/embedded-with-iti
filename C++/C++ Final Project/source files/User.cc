@@ -3,8 +3,14 @@
 #include <vector>
 #include <stdexcept>
 #include "User.h"
+#include "json.hpp"
 
 User::User(const std::string &userID, const std::string &username, const std::string &password) : userID(userID), userName(username), password(password) {}
+
+const std::vector<std::unique_ptr<Account>> &User::getAccounts() const
+{
+    return accounts;
+}
 
 void User::addAccount(std::unique_ptr<Account> account)
 {
