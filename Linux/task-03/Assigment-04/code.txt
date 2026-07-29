@@ -1,0 +1,26 @@
+print_content(){
+        ls -la
+}
+
+go_to(){
+        cd "$1"
+}
+
+search(){
+        grep "$1" "$2"
+}
+
+show_file(){
+        nl "$1"
+}
+
+remove(){
+        rm "$1"
+}
+
+make_dir(){
+        mkdir -p "$1"
+}
+create_file(){
+        touch "$1"
+}

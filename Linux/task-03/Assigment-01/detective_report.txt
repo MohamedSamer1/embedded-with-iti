@@ -1,0 +1,120 @@
+Linux Detective Report
+======================
+
+1. Current Shell
+Command:
+echo $SHELL
+
+Output:
+/bin/bash
+
+Explanation:
+The SHELL environment variable stores the path of the user's default shell.
+
+--------------------------------------------------
+
+2. Shell PID
+Command:
+echo $$
+
+Output:
+104424
+
+Explanation:
+$$ returns the Process ID (PID) of the current shell.
+
+--------------------------------------------------
+
+3. Parent PID
+Command:
+echo $PPID
+
+Output:
+104397
+
+Explanation:
+$PPID returns the Process ID of the process that started the current shell.
+
+--------------------------------------------------
+
+4. Current User
+Command:
+whoami
+
+Output:
+mohamed
+
+Explanation:
+Displays the username of the currently logged-in user.
+
+--------------------------------------------------
+
+5. Current Working Directory
+Command:
+pwd
+
+Output:
+/home/mohamed/Desktop
+
+Explanation:
+Shows the directory where the current shell is working.
+
+--------------------------------------------------
+
+6. Home Directory
+Command:
+echo $HOME
+
+Output:
+/home/mohamed
+
+Explanation:
+The HOME environment variable stores the user's home directory.
+
+--------------------------------------------------
+
+7. Hostname
+Command:
+hostname
+
+Output:
+mohamed-HP-Laptop-15-dw3xxx
+
+Explanation:
+Displays the hostname (computer name).
+
+--------------------------------------------------
+
+8. Login Shell
+Command:
+getent passwd $USER | cut -d: -f7
+
+Output:
+/bin/bash
+
+Explanation:
+Retrieves the user's account information and prints the configured login shell.
+
+--------------------------------------------------
+
+9. PATH
+Command:
+echo $PATH
+
+Output:
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+Explanation:
+PATH contains the directories that the shell searches for executable programs.
+
+--------------------------------------------------
+
+10. Number of Environment Variables
+Command:
+env | wc -l
+
+Output:
+53
+
+Explanation:
+Counts the total number of environment variables currently available in the shell.
