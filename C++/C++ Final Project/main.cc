@@ -123,6 +123,11 @@ void UserMenu(Bank &bank, User *currentUser)
 
             try
             {
+                if (currentUser->findAccount(senderID) == nullptr)
+                {
+                    throw std::invalid_argument("You do not own the sender account.");
+                }
+
                 bank.transfer(senderID, receiverID, amount);
 
                 SaveManger::saveUsers(bank);

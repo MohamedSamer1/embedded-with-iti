@@ -27,3 +27,28 @@
 [2026-07-28 12:09:30] User Logged In: Anas
 [2026-07-28 12:09:44] intilized : SAV0003
 [2026-07-28 12:09:44] Saving Account Created: SAV0003
+[2026-07-31 11:27:48] intilized : SAV0003
+[2026-07-31 11:27:48] Program Started
+[2026-07-31 11:27:58] User Logged In: jason
+[2026-07-31 11:28:08] intilized : SAV0004
+[2026-07-31 11:28:08] Saving Account Created: SAV0004
+[2026-07-31 11:28:14] User Logged Out: jason
+[2026-07-31 11:28:39] User Logged In: jason
+[2026-07-31 11:29:03] Withdraw : SAV0003
+[2026-07-31 11:29:03] Deposit : SAV0004
+[2026-07-31 11:29:03] Transfer : SAV0003 -> SAV0004
+[2026-07-31 11:31:16] intilized : SAV0004
+[2026-07-31 11:31:16] intilized : SAV0003
+[2026-07-31 11:31:16] Program Started
+[2026-07-31 11:31:28] User Logged In: jason
+[2026-07-31 11:33:16] intilized : SAV0004
+[2026-07-31 11:33:16] intilized : SAV0003
+[2026-07-31 11:33:16] Program Started
+[2026-07-31 11:33:23] User Logged In: jason
+[2026-07-31 11:46:48] intilized : SAV0004
+[2026-07-31 11:46:48] intilized : SAV0003
+[2026-07-31 11:46:48] Program Started
+[2026-07-31 11:47:00] User Logged In: jason
+[2026-07-31 11:47:27] Withdraw : SAV0004
+[2026-07-31 11:47:27] Deposit : SAV0003
+[2026-07-31 11:47:27] Transfer : SAV0004 -> SAV0003

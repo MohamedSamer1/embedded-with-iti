@@ -8,7 +8,13 @@
             "username": "mohamed-samer"
         },
         {
-            "accounts": [],
+            "accounts": [
+                {
+                    "balance": 50.0,
+                    "id": "SAV0004",
+                    "type": "Saving"
+                }
+            ],
             "id": "USR0002",
             "isAdmin": false,
             "password": "1120",
