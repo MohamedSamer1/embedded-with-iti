@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white">
   <img src="https://img.shields.io/badge/Track-ITI%20Embedded%20Systems-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Status-In%20Progress-brightgreen?style=for-the-badge">
+<img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge">
 </p>
 
 ---
