@@ -121,10 +121,14 @@ The application window will display the designed user interface.
 ## 📂 Project Structure
 
 ```text
-Task-01/
-├── main.qml
-├── Task-01.pro
-└── README.md
+task1/
+├── importedcontent/
+├── .qmls.ini
+├── CMakeLists.txt
+├── main.cpp
+├── Main.qml
+├── README.md
+└── screenshot.jpeg
 ```
 
 ---
