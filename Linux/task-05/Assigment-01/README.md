@@ -2,6 +2,7 @@
 
 ![Platform](https://img.shields.io/badge/Platform-Linux-FCC624?logo=linux&logoColor=black)
 ![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnubash&logoColor=white)
+![Level](https://img.shields.io/badge/Level-Intermediate-orange)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 ## 📖 Overview
