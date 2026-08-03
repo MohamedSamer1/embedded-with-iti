@@ -3,6 +3,7 @@
 ![Platform](https://img.shields.io/badge/Platform-Cross--Platform-blue)
 ![Framework](https://img.shields.io/badge/Framework-Qt%20Quick-41CD52?logo=qt&logoColor=white)
 ![Language](https://img.shields.io/badge/Language-QML-orange)
+![Level](https://img.shields.io/badge/Level-Beginner-success)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 ## 📖 Overview
