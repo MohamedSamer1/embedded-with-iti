@@ -9,7 +9,6 @@
 # ==========================
 # Build folders
 # ==========================
-build/
 bin/
 Debug/
 Release/
