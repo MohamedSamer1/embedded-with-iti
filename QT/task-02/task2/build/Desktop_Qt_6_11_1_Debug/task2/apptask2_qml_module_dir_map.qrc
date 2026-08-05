@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/task2">/home/mohamed/Desktop/embedded-with-iti/QT/task-02/task2/build/Desktop_Qt_6_11_1_Debug/task2</file>
+
+  </qresource>
+</RCC>

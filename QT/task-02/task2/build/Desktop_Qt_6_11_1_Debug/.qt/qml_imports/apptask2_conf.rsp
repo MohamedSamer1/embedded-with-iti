@@ -1,0 +1,15 @@
+-rootPath
+/home/mohamed/Desktop/embedded-with-iti/QT/task-02/task2
+-cmake-output
+-output-file
+/home/mohamed/Desktop/embedded-with-iti/QT/task-02/task2/build/Desktop_Qt_6_11_1_Debug/.qt/qml_imports/apptask2_conf.cmake
+-importPath
+/home/mohamed/Desktop/embedded-with-iti/QT/task-02/task2/build/Desktop_Qt_6_11_1_Debug
+-importPath
+/home/mohamed/Desktop/embedded-with-iti/QT/task-02/task2/build/Desktop_Qt_6_11_1_Debug/task2
+-importPath
+/home/mohamed/Qt/6.11.1/gcc_64/qml
+-qrcFiles
+/home/mohamed/Desktop/embedded-with-iti/QT/task-02/task2/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/qmake_task2.qrc
+/home/mohamed/Desktop/embedded-with-iti/QT/task-02/task2/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/apptask2_raw_qml_0.qrc
+/home/mohamed/Desktop/embedded-with-iti/QT/task-02/task2/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/apptask2_raw_res_0.qrc

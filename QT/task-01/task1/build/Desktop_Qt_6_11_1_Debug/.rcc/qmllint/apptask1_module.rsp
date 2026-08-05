@@ -1,0 +1,14 @@
+-I
+/home/mohamed/Desktop/embedded-with-iti/QT/task1/build/Desktop_Qt_6_11_1_Debug
+-I
+/home/mohamed/Desktop/embedded-with-iti/QT/task1/build/Desktop_Qt_6_11_1_Debug/task1
+-I
+/home/mohamed/Desktop/embedded-with-iti/QT/task1/build/Desktop_Qt_6_11_1_Debug
+-I
+/home/mohamed/Qt/6.11.1/gcc_64/qml
+--resource
+/home/mohamed/Desktop/embedded-with-iti/QT/task1/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/qmake_task1.qrc
+--resource
+/home/mohamed/Desktop/embedded-with-iti/QT/task1/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/apptask1_raw_qml_0.qrc
+--module
+task1

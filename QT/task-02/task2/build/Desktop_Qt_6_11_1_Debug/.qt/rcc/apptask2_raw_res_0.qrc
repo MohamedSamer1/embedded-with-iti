@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/task2/">
+    <file alias="Resources.qrc">/home/mohamed/Desktop/embedded-with-iti/QT/task-02/task2/Resources.qrc</file>
+  </qresource>
+</RCC>
+

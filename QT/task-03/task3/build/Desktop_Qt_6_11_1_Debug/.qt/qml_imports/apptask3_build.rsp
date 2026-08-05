@@ -1,0 +1,14 @@
+-rootPath
+/home/mohamed/Desktop/embedded-with-iti/QT/task-03/task3
+-cmake-output
+-output-file
+/home/mohamed/Desktop/embedded-with-iti/QT/task-03/task3/build/Desktop_Qt_6_11_1_Debug/.qt/qml_imports/apptask3_build.cmake
+-importPath
+/home/mohamed/Desktop/embedded-with-iti/QT/task-03/task3/build/Desktop_Qt_6_11_1_Debug
+-importPath
+/home/mohamed/Desktop/embedded-with-iti/QT/task-03/task3/build/Desktop_Qt_6_11_1_Debug/task3
+-importPath
+/home/mohamed/Qt/6.11.1/gcc_64/qml
+-qrcFiles
+/home/mohamed/Desktop/embedded-with-iti/QT/task-03/task3/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/qmake_task3.qrc
+/home/mohamed/Desktop/embedded-with-iti/QT/task-03/task3/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/apptask3_raw_qml_0.qrc

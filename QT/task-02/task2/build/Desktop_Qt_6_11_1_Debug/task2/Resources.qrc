@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>iris.png</file>
+        <file>cayturboE (Copy).png</file>
+        <file>911.png</file>
+        <file>porsche-logo-png_seeklogo-168544.png</file>
+    </qresource>
+</RCC>
