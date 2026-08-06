@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>pic1.jpg</file>
+        <file>911.png</file>
+        <file>ssd.jpg</file>
+        <file>laptop.jpeg</file>
+        <file>iphone.png</file>
+        <file>keyboard.png</file>
+        <file>monitor.png</file>
+        <file>mouse.png</file>
+        <file>speaker.png</file>
+        <file>headphones.png</file>
+        <file>watch.png</file>
+        <file>webcam.png</file>
+        <file>hub.png</file>
+        <file>controller.png</file>
+        <file>ps5.png</file>
+    </qresource>
+</RCC>

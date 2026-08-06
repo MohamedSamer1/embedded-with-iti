@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/i18n">
+    <file alias="i18n/qml_ar.qm">/home/mohamed/Desktop/embedded-with-iti/QT/task-04/shop_improved/shop1/i18n/qml_ar.qm</file>
+    <file alias="i18n/qml_en.qm">/home/mohamed/Desktop/embedded-with-iti/QT/task-04/shop_improved/shop1/i18n/qml_en.qm</file>
+  </qresource>
+</RCC>
+

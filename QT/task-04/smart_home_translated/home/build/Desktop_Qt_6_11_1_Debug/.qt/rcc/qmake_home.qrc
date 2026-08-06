@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/home">
+    <file alias="qmldir">/home/mohamed/Desktop/embedded-with-iti/QT/task-04/smart_home_translated/home/build/Desktop_Qt_6_11_1_Debug/home/qmldir</file>
+  </qresource>
+</RCC>
+

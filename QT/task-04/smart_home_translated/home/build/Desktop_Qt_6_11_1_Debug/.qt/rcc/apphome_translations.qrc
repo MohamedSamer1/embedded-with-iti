@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/i18n">
+    <file alias="qml_ar.qm">/home/mohamed/Desktop/embedded-with-iti/QT/task-04/smart_home_translated/home/build/Desktop_Qt_6_11_1_Debug/qml_ar.qm</file>
+    <file alias="qml_en.qm">/home/mohamed/Desktop/embedded-with-iti/QT/task-04/smart_home_translated/home/build/Desktop_Qt_6_11_1_Debug/qml_en.qm</file>
+  </qresource>
+</RCC>
+

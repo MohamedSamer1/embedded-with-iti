@@ -1,0 +1,16 @@
+-rootPath
+/home/mohamed/Desktop/embedded-with-iti/QT/task-04/shop_improved/shop1
+-cmake-output
+-output-file
+/home/mohamed/Desktop/embedded-with-iti/QT/task-04/shop_improved/shop1/build/Desktop_Qt_6_11_1_Debug/.qt/qml_imports/appshop1_conf.cmake
+-importPath
+/home/mohamed/Desktop/embedded-with-iti/QT/task-04/shop_improved/shop1/build/Desktop_Qt_6_11_1_Debug
+-importPath
+/home/mohamed/Desktop/embedded-with-iti/QT/task-04/shop_improved/shop1/build/Desktop_Qt_6_11_1_Debug/shop1
+-importPath
+/home/mohamed/Qt/6.11.1/gcc_64/qml
+-qrcFiles
+/home/mohamed/Desktop/embedded-with-iti/QT/task-04/shop_improved/shop1/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/qmake_shop1.qrc
+/home/mohamed/Desktop/embedded-with-iti/QT/task-04/shop_improved/shop1/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/appshop1_raw_qml_0.qrc
+/home/mohamed/Desktop/embedded-with-iti/QT/task-04/shop_improved/shop1/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/appshop1_raw_res_0.qrc
+/home/mohamed/Desktop/embedded-with-iti/QT/task-04/shop_improved/shop1/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/appshop1_translations.qrc

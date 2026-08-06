@@ -1,0 +1,15 @@
+-rootPath
+/home/mohamed/Desktop/embedded-with-iti/QT/task-04/smart_home_translated/home
+-cmake-output
+-output-file
+/home/mohamed/Desktop/embedded-with-iti/QT/task-04/smart_home_translated/home/build/Desktop_Qt_6_11_1_Debug/.qt/qml_imports/apphome_build.cmake
+-importPath
+/home/mohamed/Desktop/embedded-with-iti/QT/task-04/smart_home_translated/home/build/Desktop_Qt_6_11_1_Debug
+-importPath
+/home/mohamed/Desktop/embedded-with-iti/QT/task-04/smart_home_translated/home/build/Desktop_Qt_6_11_1_Debug/home
+-importPath
+/home/mohamed/Qt/6.11.1/gcc_64/qml
+-qrcFiles
+/home/mohamed/Desktop/embedded-with-iti/QT/task-04/smart_home_translated/home/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/qmake_home.qrc
+/home/mohamed/Desktop/embedded-with-iti/QT/task-04/smart_home_translated/home/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/apphome_raw_qml_0.qrc
+/home/mohamed/Desktop/embedded-with-iti/QT/task-04/smart_home_translated/home/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/apphome_translations.qrc
