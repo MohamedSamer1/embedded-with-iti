@@ -1,0 +1,14 @@
+-rootPath
+/home/mohamed/Desktop/embedded-with-iti/QT/task-05/calculator
+-cmake-output
+-output-file
+/home/mohamed/Desktop/embedded-with-iti/QT/task-05/calculator/build/Desktop_Qt_6_11_1_Debug/.qt/qml_imports/appcalculator_conf.cmake
+-importPath
+/home/mohamed/Desktop/embedded-with-iti/QT/task-05/calculator/build/Desktop_Qt_6_11_1_Debug
+-importPath
+/home/mohamed/Desktop/embedded-with-iti/QT/task-05/calculator/build/Desktop_Qt_6_11_1_Debug/calculator
+-importPath
+/home/mohamed/Qt/6.11.1/gcc_64/qml
+-qrcFiles
+/home/mohamed/Desktop/embedded-with-iti/QT/task-05/calculator/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/qmake_calculator.qrc
+/home/mohamed/Desktop/embedded-with-iti/QT/task-05/calculator/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/appcalculator_raw_qml_0.qrc

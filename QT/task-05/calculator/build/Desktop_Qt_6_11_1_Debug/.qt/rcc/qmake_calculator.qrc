@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/calculator">
+    <file alias="qmldir">/home/mohamed/Desktop/embedded-with-iti/QT/task-05/calculator/build/Desktop_Qt_6_11_1_Debug/calculator/qmldir</file>
+  </qresource>
+</RCC>
+

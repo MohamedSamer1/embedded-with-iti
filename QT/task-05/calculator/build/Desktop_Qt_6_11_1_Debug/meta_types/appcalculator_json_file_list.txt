@@ -1,0 +1,1 @@
+/home/mohamed/Desktop/embedded-with-iti/QT/task-05/calculator/build/Desktop_Qt_6_11_1_Debug/appcalculator_autogen/include/../EWIEGA46WW/moc_calc.cpp.json

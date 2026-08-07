@@ -1,0 +1,71 @@
+[
+    {
+        "classes": [
+            {
+                "className": "Calc",
+                "lineNumber": 6,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "a",
+                                "type": "double"
+                            },
+                            {
+                                "name": "b",
+                                "type": "double"
+                            },
+                            {
+                                "name": "op",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 14,
+                        "name": "calculate",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 9,
+                        "name": "result",
+                        "notify": "resultChanged",
+                        "override": false,
+                        "read": "result",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "virtual": false
+                    }
+                ],
+                "qualifiedClassName": "Calc",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 17,
+                        "name": "resultChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "calc.h",
+        "outputRevision": 69
+    }
+]
